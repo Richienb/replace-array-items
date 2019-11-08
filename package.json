@@ -1,6 +1,6 @@
 {
     "name": "replace-array-items",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "description": "Replace all items in an array with the same value.",
     "repository": "https://github.com/Richienb/replace-array-items.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
