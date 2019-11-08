@@ -1,41 +1,36 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# Replace array items [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/replace-array-items/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/replace-array-items)
 
-My awesome module.
+Replace all items in an array with the same value.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/replace-array-items.png)](https://npmjs.com/package/replace-array-items)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install replace-array-items
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const replaceArrayItems = require("replace-array-items");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+replaceArrayItems([1, "a", null], "Hello");
+//=> ["Hello", "Hello", "Hello"]
 ```
 
 ## API
 
-### theModule(input, options?)
+### replaceArrayItems(array, value)
 
-#### input
+#### array
 
-Type: `string`
+Type: `array`
 
-Lorem ipsum.
+The array to modify.
 
-#### options
+#### value
 
-Type: `object`
+Type: `any`
 
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+The value to set all the items to.

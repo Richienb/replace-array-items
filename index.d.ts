@@ -1,14 +1,14 @@
 /**
- * My awesome module.
- * @param input Lorem ipsum.
- * @param postfix Lorem ipsum.
+ * Replace all items in an array with the same value.
+ * @param array The array to modify.
+ * @param value The value to set all the items to.
  * @example
  * ```
- * const theModule = require("the-module");
- * theModule("unicorns");
- * //=> 'unicorns & rainbows'
+ * const replaceArrayItems = require("replace-array-items");
+ * replaceArrayItems([1, "a", null], "Hello");
+ * //=> ["Hello", "Hello", "Hello"]
  * ```
 */
-declare function theModule(input: string, { postfix }: { postfix?: string }): string;
+declare function replaceArrayItems<T extends Array, U>(array: T, value: U): U[];
 
-export = theModule;
+export = replaceArrayItems;
