@@ -21,9 +21,7 @@
         "array",
         "check"
     ],
-    "dependencies": {
-        "lodash.map": "^4.6.0"
-    },
+    "dependencies": {},
     "devDependencies": {
         "ava": "^2.1.0",
         "eslint": "^6.6.0",
